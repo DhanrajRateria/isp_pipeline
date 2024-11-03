@@ -3,7 +3,7 @@ from tkinter import ttk
 from tkinter import filedialog
 import cv2
 from PIL import Image, ImageTk
-from isp.pipeline import ISPPipeline
+from isp_main.pipeline import ISPPipeline
 
 class ISPApplication:
     def __init__(self, master):
