@@ -1,5 +1,5 @@
 import numpy as np
-from base import PipelineStage
+from .base import PipelineStage
 
 class SRGBGamma(PipelineStage):
     """sRGB gamma correction."""

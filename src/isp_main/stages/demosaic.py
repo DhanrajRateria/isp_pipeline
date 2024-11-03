@@ -1,5 +1,5 @@
 import numpy as np
-from base import PipelineStage
+from .base import PipelineStage
 
 class EdgeBasedDemosaic(PipelineStage):
     """5x5 edge-based demosaicing for GRBG Bayer pattern images."""

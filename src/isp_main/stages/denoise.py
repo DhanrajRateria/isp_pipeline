@@ -1,5 +1,5 @@
 import cv2
-from base import PipelineStage
+from .base import PipelineStage
 
 class GaussianDenoise(PipelineStage):
     """Gaussian denoising using a 5x5 Gaussian filter."""

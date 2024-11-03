@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from base import PipelineStage
+from .base import PipelineStage
 
 class UnsharpMask(PipelineStage):
     """Unsharp masking for enhancing image details."""

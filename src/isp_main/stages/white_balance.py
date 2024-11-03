@@ -1,5 +1,5 @@
 import numpy as np
-from base import PipelineStage
+from .base import PipelineStage
 
 class GrayWorldWhiteBalance(PipelineStage):
     """Gray World white balance to adjust color balance."""
