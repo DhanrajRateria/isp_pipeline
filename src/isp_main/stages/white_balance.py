@@ -3,7 +3,7 @@ from .base import PipelineStage
 
 class GrayWorldWhiteBalance(PipelineStage):
     """Gray World white balance to adjust color balance."""
-    def process(self, image):
+    def process(self, image, params = None):
         self.validate_input(image)
         r_avg, g_avg, b_avg = [np.mean(image[:, :, i]) for i in range(3)]
         gray = (r_avg + g_avg + b_avg) / 3

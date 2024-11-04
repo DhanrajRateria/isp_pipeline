@@ -3,7 +3,7 @@ from .base import PipelineStage
 
 class SRGBGamma(PipelineStage):
     """sRGB gamma correction."""
-    def process(self, image):
+    def process(self, image, params = None):
         self.validate_input(image)
         normalized = image.astype(np.float32) / image.max()  # Normalize to [0, 1]
         corrected = np.power(normalized, 1 / self.config.get('gamma', 2.2))

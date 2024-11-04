@@ -4,7 +4,7 @@ from .base import PipelineStage
 
 class UnsharpMask(PipelineStage):
     """Unsharp masking for enhancing image details."""
-    def process(self, image):
+    def process(self, image, params = None):
         self.validate_input(image)
         blurred = cv2.GaussianBlur(image, (self.config.get('radius', 1)*2+1,)*2, self.config.get('radius', 1))
         mask = image - blurred
